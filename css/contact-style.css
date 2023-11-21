@@ -1,0 +1,340 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+a
+body {
+    background-color: #000;
+    width: 100%;
+    height: 866px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: block;
+}
+/* start navigation bar */
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: 'Roboto Slab';
+  margin-bottom: 5px;
+  margin-top: 0px;  
+  opacity: 0.8;
+}
+.logo-img{
+  float: left;
+  position: relative;
+  margin: 10px 15px 15px 10px;
+  margin-left: 5%;
+  text-indent: 2px;
+  line-height: 20px;
+}
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.topnav a:hover {
+  color:#9a9a2d;
+  text-decoration: none;
+}
+.topnav a.active {
+  color: #9a9a2d;
+}
+.topnav-right {
+  float: right;
+}
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  } 
+}
+/* end navigation bar */
+
+/* start header */
+.head {
+  padding: 20px;
+  background-size:cover;
+  margin: auto;
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: 1px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.img-1{
+  display: grid;
+  float: right;
+  width:210px;
+  position: relative;
+  margin-right: 15%;
+
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+.head-1{
+  color:#fff1e1;
+  font-size: 75px;
+  font-family: Impact,'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  padding-left: 55%;
+  margin-top: 250px;
+
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+#id {
+    color:#999966;
+}
+.head-2 {
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    color: #fffefe;
+    text-align: center;
+    padding-left: 55%;
+    margin-top: 50px;
+
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+#time {
+    font-size: 22px;
+    font-family:'Times New Roman', Times, serif;
+    color: #999966;
+    text-align: center;
+}
+/* end header */
+
+/* start contact table */
+#contact-page {
+  height:100%;
+  background:#ffffff; 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 5px 50px 50px 50px;
+}
+.contact-form {
+  flex: 1;
+  background-color: #ffffff;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 5px;
+}
+.form-header {
+  padding:15px 0;
+}
+.form-header h1 {
+  font-size: 6em;
+  text-align:center;
+  color: #999966;
+  font-family:'Great Vibes', Helvetica, Arial, sans-serif;
+}
+.row {
+  display:flex;
+  flex-direction:row;
+}
+.column {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+label {
+  color:#000000;
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-left: 2px;
+}
+.input-group {
+  flex:1;  
+  display:flex;
+  flex-direction:column; 
+  margin: 40px 80px;
+}
+.input-group-1 {
+  flex:1;  
+  display:flex;
+  flex-direction:column; 
+  margin: 25px 55px;
+}
+.form-body {
+  background:white;
+  padding:5px 10px;
+}
+input[type="text"],
+input[type="email"]
+ {
+  width: 100%;
+  font-size: 18px;
+  height: 34px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #666;
+  border: 1px solid #000000ad;
+  border-radius: 4px;
+  background: white;
+  outline: none;
+}
+textarea{
+    display: block;
+    width: 90em;
+    height: 140px;
+    padding: 7px 14px;
+    font-size: 18px;
+    line-height: 1.6;
+    box-shadow: none;
+    overflow: auto;
+    border: 1px solid #000000ad;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-footer {
+  display:flex;
+  justify-content: center;
+}
+.btn-2 {
+    padding:12px;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #000000;
+    font-size:18px;
+    border:none;
+    color:#ffffff;
+    cursor:pointer;
+    margin: 20px;
+    border-radius: 9px;
+}
+.btn-2:hover{
+  color: #000000;
+  background-color:#9a9a2d;;
+}
+/* MOBILE VIEW */
+@media only screen and (max-width: 500px) {
+  .row{
+    flex-direction:column; 
+  }
+
+  .btn {
+      flex:1;
+  }
+}
+/* end contact table */
+
+/* start abouts and contact */
+.column-1 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 250px;
+  background-color:#333333;
+}
+#row-1{
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-size: cover;
+}
+#row-1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column-1 {
+    width: 100%;
+  }
+}
+/* section 1 */
+.last{
+  color:#ffffff;
+  font-size: 50px;
+  font-family: Impact,'Arial Narrow Bold', sans-serif;
+  text-align: right;
+}
+.last1 {
+  font-size: 50px;
+  font-family:'Great Vibes', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-align: right;
+}
+#id-6{
+  color: #999966;
+}
+/* section 2 */
+ /* btn */
+.sub {
+  background-color: #fffcfc;
+  border-radius: 9px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  height: 55px;
+  width: 200px;
+  margin: 15px;
+  border: 0px solid;
+  cursor: pointer;
+  font-family:'Times New Roman', Times,serif;
+  align-items: center;
+}
+.sub:hover{
+  color:rgb(255, 255, 255) ;
+  background-color: #9a9a2d;
+  text-decoration: none;
+}
+.icon{
+  margin: 15px;
+  color: rgb(255, 255, 255);
+}
+.icon:hover{
+  color: #9a9a2d;
+}
+/* section 3 */
+.p2{
+  font-size: 19px;
+  text-align:justify;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+}
+.opentable{
+  color:rgb(255, 255, 255);
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.opentable:hover{
+  color:#9a9a2d;
+}
+/* end abouts and contact  */
+
+/* start animation */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translate(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes mymove {
+  0%   {top: 0px;
+        bottom:0px;}
+  50%  {top: 50px;}
+  50%  {bottom: 5=20px;}
+
+}
+/* end animation */

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation-page</title>
+    <link rel="stylesheet" href="css/reserve-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great Vibes&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+
+    <!-- start header -->
+    <div class="head" style="background-image: url('img/ph-5.jpg');">
+        <img class="img-1" src="img/ind-2.png" alt="logo">
+        <h1 class="head-1">
+            Reserve<span id="id"> your</span> table 
+        </h1>
+     </div>
+     <!-- end header -->
+
+        <!-- start Reservation table -->
+                <section id="reservation-page">
+                    <form class="reserve-form">
+                        <div class="form-header">
+                            <h1>Reservation</h1>
+                        </div>
+                        <!-- BOOK A TABELE -->
+                        <div class="form1-header">
+                            <h1><b>BOOK A TABELE</b></h1>
+                        </div>
+                            <div class="form-body">
+                                <div class="row">
+                                <div class="input-group">
+                                    <label>DATE</label>
+                                    <input type="date" name="udate" required>
+                                </div>
+                                <div class="input-group">
+                                    <label>TIME</label>
+                                    <input type="time" name="utime" required>
+                                </div>
+                                <div class="input-group">
+                                    <label>PARTY</label>
+                                    <input type="number"  name="unumber" required>
+                                </div>
+                            </div>
+                            <!-- CONTACT DETAILS -->
+                            <div class="form1-header">
+                                <h1><b>CONTACT DETAILS</b></h1>
+                            </div>
+                    <div class="form-body">    
+                        <div class="column">
+                            <div class="input-group-1">
+                                <label>NAME</label>
+                                <input type="text" placholder="Enter your name" required>
+                            </div>
+                            <div class="input-group-1">
+                                <label>EMAIL</label>
+                                <input type="email" placholder="Enter your email" required>
+                            </div>
+                            <div class="input-group-1">
+                                <label>PHONE</label>
+                                <input type="text" placholder="Enter your phone number" required>
+                            </div>
+                            <div class="input-group-1">
+                                <label>MESSAGE</label>
+                                <input type="text" placholder="Enter your message">
+                            </div>
+                    </div>        
+                    </div>
+                        <div class="form-footer">
+                        <button class="btn-2">REQUEST BOOKING</button>
+                    </div>
+                    </form>
+                </section>  
+          <!-- end reservation table -->
+
+          <!-- start contact and about -->
+    <div id="row-1" style="background-color: #333333;">
+        <!-- section 1 -->
+        <div class="column-1" style="float: left;">
+            <h1 class="last">
+                Salt  <span id="id-6">N'</span> Pepper 
+                </h1>
+                <div class="last1">The flavour of <span id="id-1"> yummy</span>
+                </div>
+        </div>
+        <!-- section 2 -->
+        <div class="column-1" style="text-align: center;">
+            <input type="submit" class="sub" value="ONLINE RESERVATION" onclick="window.location.href='reservation.html'">
+          <h4 style="font-family: 'Times New Roman', Times, serif; color: rgb(255, 255, 255);">FOLLOW</h4>
+          <div class="fa fa-facebook icon"></div>
+          <div class="fa fa-twitter icon"></div>
+          <div class="fa fa-instagram icon"></div>
+          <div class="fa fa-snapchat-ghost icon"></div>
+        </div>
+        <!-- section 3 -->
+        <div class="column-1" style="float: left;">
+            <h3 style="font-size:18px; color:#9a9a2d; font-family:Poppins, Helvetica, Arial, sans-serif;">+91 0000 0000 00</h3>
+            <h4><a href="https://www.opentable.com/" style="text-decoration: none;" class="opentable">BOOKATABLE@OPENTABLE.COM</a></h4>
+            <h5 class="p2">salt n' pepper Restaurant<br>
+                lulu mall<br>
+                ground floor<br>
+                palakkad road<br>
+                perinthalmanna<br>
+                malappuram(d.t)<br>
+                kerala 679325</h5>
+        </div>
+    </div>
+    <!-- end contact and about -->
+
+
+    <!-- start navigation -->
+<div class="topnav">
+    <img class="logo-img" src="img/ind-2.png" width="80px" height="45px" ALT="align box" style="margin-left: 10px;">
+    <a href="index.html">Home</a>
+    <a href="index.html#flex-container">Menu</a>
+    <a href="contact.html">Contact</a> 
+    <a href="#reservation" class="active">Reservation</a>
+    <div class="topnav-right">
+      <a  class="fa fa-search" href="#search"></a>
+      <a href="#row-1">About</a>
+    </div>
+    <!-- <div class="">
+    <div id="google_translate_element"></div>
+
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div> -->
+</div>
+<!-- end navication bar   -->
+</body>
+</html>
